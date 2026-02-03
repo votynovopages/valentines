@@ -54,16 +54,16 @@
 })();
 */
 const messages = [
-    "Are you sure?",
-    "Really sure??",
-    "Are you positive?",
-    "Pookie please...",
-    "Just think about it!",
-    "If you say no, I will be really sad...",
-    "I will be very sad...",
-    "I will be very very very sad...",
-    "Ok fine, I will stop asking...",
-    "Just kidding, say yes please! ❤️"
+"Jsi si jistá?“
+"Opravdu jistá??“
+"Vážně?“
+"Lásko, prosím…“
+"Jen o tom přemýšlej!“
+"Když řekneš ne, budu opravdu smutný…“
+"Budu hodně smutný…“
+"Budu velmi, velmi, velmi smutný…“
+"Dobře, tak přestanu se ptát…“
+"Jen žertuju, prosím řekni ano! ❤️“
 ];
 
 let messageIndex = 0;
