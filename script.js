@@ -54,15 +54,15 @@
 })();
 */
 const messages = [
-"Jsi si jistá?“
-"Opravdu jistá??“
-"Vážně?“
-"Lásko, prosím…“
-"Jen o tom přemýšlej!“
-"Když řekneš ne, budu opravdu smutný…“
-"Budu hodně smutný…“
-"Budu velmi, velmi, velmi smutný…“
-"Dobře, tak přestanu se ptát…“
+"Jsi si jistá?“,
+"Opravdu jistá??“,
+"Vážně?“,
+"Lásko, prosím…“,
+"Jen o tom přemýšlej!“,
+"Když řekneš ne, budu opravdu smutný…“,
+"Budu hodně smutný…“,
+"Budu velmi, velmi, velmi smutný…“,
+"Dobře, tak přestanu se ptát…“,
 "Jen žertuju, prosím řekni ano! ❤️“
 ];
 
