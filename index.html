@@ -1,81 +1,22 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Valentýn speciál 💘</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-family: 'Pacifico', cursive;
-    background: url('https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif') center/cover no-repeat;
-  }
-  h1 {
-    text-align: center;
-    color: #fff;
-    font-size: 3rem;
-    margin-top: 50px;
-    text-shadow: 2px 2px 8px #000;
-  }
-  .btn-container {
-    text-align: center;
-    position: relative;
-    top: 200px;
-  }
-  button {
-    padding: 20px 45px;
-    font-size: 1.8rem;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: 0.3s ease;
-  }
-  #yesBtn {
-    background: #ff0066;
-    color: #fff;
-  }
-  #noBtn {
-    background: #ff3399;
-    color: #fff;
-    position: absolute;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<h1>Budeš moje Valentýnka? 💘</h1>
-
-<div class="btn-container">
-  <button id="yesBtn">ANO 💖</button>
-  <button id="noBtn">NE 😅</button>
-</div>
-
-<script>
-// zvukový efekt
-const yesSound = new Audio('https://freesound.org/data/previews/341/341695_5260874-lq.mp3');
-
-// tlačítko NE utíká
-const noBtn = document.getElementById('noBtn');
-noBtn.addEventListener('mouseover', () => {
-  const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);
-  const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
-  noBtn.style.left = x + 'px';
-  noBtn.style.top = y + 'px';
-});
-
-// kliknutí ANO – efekty a zvuk
-document.getElementById('yesBtn').addEventListener('click', () => {
-  yesSound.play();
-  document.body.innerHTML += `<img src="https://media.giphy.com/media/5GoVLqeAOo6PK/giphy.gif" 
-  style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:300px;">`;
-  alert('Jupí! 💘 Děkuju! 🎉');
-});
-</script>
-
+    <div class="container">
+        <h1>Will you be my Valentine?</h1>
+        <div class="buttons">
+            <button class="yes-button" onclick="handleYesClick()">Yes</button>
+            <button class="no-button" onclick="handleNoClick()">No</button>
+        </div>
+        <div class="gif_container">
+            <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif" alt="Cute GIF">
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
